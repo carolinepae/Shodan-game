@@ -3,7 +3,6 @@ const {app, BrowserWindow} = require('electron')
 const path = require('path')
 
  app.commandLine.appendSwitch('--force_high_performance_gpu')
- app.commandLine.appendSwitch('--disable-frame-rate-limit')
  app.commandLine.appendSwitch('--disable-gpu-vsync')
   app.commandLine.appendSwitch('--limit-fps', 60);
  
@@ -19,7 +18,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  mainWindow.loadURL('https://launch.playcanvas.com/1086241?debug=true&ministats=true')
   
 
 

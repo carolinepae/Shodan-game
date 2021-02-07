@@ -1,1 +1,1 @@
-./electron/electron --enable-accelerated-mjpeg-decode --enable-accelerated-video --ignore-gpu-blacklist --enable-native-gpu-memory-buffers --enable-gpu-rasterization .
+./electron/electron main.js
